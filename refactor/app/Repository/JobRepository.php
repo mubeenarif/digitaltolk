@@ -28,10 +28,10 @@ use Monolog\Handler\FirePHPHandler;
 use Illuminate\Support\Facades\Auth;
 
 /**
- * Class BookingRepository
+ * Class JobRepository
  * @package DTApi\Repository
  */
-class BookingRepository extends BaseRepository implements BookingRepositoryInterface
+class JobRepository extends BaseRepository implements JobRepositoryInterface
 {
 
     protected $model;
@@ -283,7 +283,7 @@ class BookingRepository extends BaseRepository implements BookingRepositoryInter
      * @param $data
      * @return mixed
      */
-    public function storeJobEmail($data)
+    public function immediateJobEmail($data)
     {
         $user_type = $data['user_type'];
         $job = Job::findOrFail(@$data['user_email_job_id']);

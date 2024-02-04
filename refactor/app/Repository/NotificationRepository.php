@@ -28,10 +28,10 @@ use Monolog\Handler\FirePHPHandler;
 use Illuminate\Support\Facades\Auth;
 
 /**
- * Class BookingRepository
+ * Class NotificationRepository
  * @package DTApi\Repository
  */
-class BookingRepository extends BaseRepository implements BookingRepositoryInterface
+class NotificationRepository extends BaseRepository implements NotificationRepositoryInterface
 {
 
     protected $model;
